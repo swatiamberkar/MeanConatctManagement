@@ -16,7 +16,7 @@ const port = process.env.PORT || 3000;
 
 // Connect Angular Project to Node Server
 // Connect frondend to backend
-app.use(express.static('contact-management'))
+app.use(express.static('contact-management-frontend'))
 
 app.listen(port, ()=>{
     console.log(`Server is running at http://localhost:${port}`);
