@@ -56,4 +56,11 @@ router.delete('/:id', (req, res)=>{
     })
 });
 
+// Search
+router.get("/search/:key", async(req, res) => {
+    console.log(req.params.key);
+    res.send(req.params.key)
+})
+
+
 module.exports = router;
